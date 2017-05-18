@@ -1,0 +1,62 @@
+﻿
+
+<form id="personalInfoForm" method="post">
+    <h3>Personal information</h3>
+    <p id="personalInfoValidationFailure" class="failure"></p>
+    <p>
+        <label>Age</label>
+        <select name="Age">
+            <option value="0">Select your age</option>
+            <option value="1">0-17</option>
+            <option value="2">18-64</option>
+            <option value="3">65+</option>
+        </select>
+    </p>
+    <p>
+        <label>Status</label>
+        <select name="Status">
+            <option value="0">Select your status</option>
+            <option value="1">Student</option>
+            <option value="2">Other</option>
+        </select>
+    </p>
+    <p>
+        <label>Income</label>
+        <select name="Income">
+            <option value="0">Select your income</option>
+            <option value="1">0</option>
+            <option value="2">1-12000</option>
+            <option value="3">12001-40000</option>
+            <option value="4">40001+</option>
+        </select>
+    </p>
+
+    <div id ="bundle" hidden>
+        <h3>Suggested Bundle</h3>
+        <p id="bundleValidationFailure" class="failure"></p>
+        <p id="bundleValidationSuccess" class="success"></p>
+        <p>
+            <label>Account</label>
+            <select name="Account">
+                <option value="0">Select account</option>
+                <option value="1">CURRENT_ACCOUNT</option>
+                <option value="2">CURRENT_ACCOUNT_PLUS</option>
+                <option value="3">JUNIOR_SAVER_ACCOUNT</option>
+                <option value="4">STUDENT_ACCOUNT</option>
+                <option value="5">PENSIONER_ACCOUNT</option>
+            </select>
+        </p>
+        <p>
+            <label>Cards</label>
+            <select multiple name="Cards">
+                <option value="1">DEBIT_CARD</option>
+                <option value="2">CREDIT_CARD</option>
+                <option value="3">GOLD_CREDIT_CARD</option>
+            </select>
+        </p>
+    </div>
+
+    <input class="btn btn-default" type="button" id="saveInfo" value="Suggest Bundle" />
+    <input class="btn btn-default" type="hidden" id="validateBundle" value="Validate Bundle" />
+</form>
+
